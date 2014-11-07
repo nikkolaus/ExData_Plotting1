@@ -27,7 +27,7 @@ png(filename = "plot4.png");
 par(mfrow=c(2, 2));
   
 # same as plot2
-plot(power$Time, power$Global_active_power, type = "l", ylab = "Global Active Power (kilowatts)", xlab = "");
+plot(power$Time, power$Global_active_power, type = "l", ylab = "Global Active Power", xlab = "");
 # quite similar
 plot(power$Time, power$Voltage, type = "l", ylab = "Voltage", xlab = "datetime");
 
@@ -39,7 +39,7 @@ lines(power$Time, power$Sub_metering_3, col="blue");
 legend("topright",  c("Sub_metering_1", "Sub_metering_2","Sub_metering_3"), col = c("black", "red", "blue"), lty=1, bty="Y", border = "black")
 
 # new one
-plot(power$Time, power$Global_reactive_power, type = "l", ylab = "Global Reactive Power (kilowatts)", xlab = "datetime");
+plot(power$Time, power$Global_reactive_power, type = "l", ylab = "Global Reactive Power", xlab = "datetime");
 
 
 # close the device, so that png file is stored
